@@ -8,6 +8,6 @@ spl_autoload_register( function ( $className){
     $filepath = LIB_PATH.$className.'.php';
     $opfile = $filepath.'.op';
     if (is_file($opfile)) {
-        require $filepath;
+        require $opfile;
     }
 }, true);
